@@ -2,7 +2,7 @@ Here I will keep track of my progress learning Go-lang, by starting off with a s
 
 ## Tasks
 
-- [ ] Basic hello/goodbye world
+- [x] Basic hello/goodbye world [[Source Code]](hello)
 - [ ] Read multi-dimensional arrays
 - [ ] Create and parse structs
 - [ ] File operations
