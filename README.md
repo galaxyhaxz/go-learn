@@ -3,9 +3,11 @@ Here I will keep track of my progress learning Go-lang, by starting off with a s
 ## Tasks
 
 - [ ] Basic hello/goodbye world
+- [ ] Read multi-dimensional arrays
+- [ ] Create and parse structs
 - [ ] File operations
 - [ ] Create a graphical display context
+- [ ] Interact with mouse and keyboard
 - [ ] Display an image
 - [ ] Sort an array of data
 - [ ] Write formatted data to a file
-- [ ] Interact with mouse and keyboard
