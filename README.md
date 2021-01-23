@@ -14,6 +14,11 @@ Here I will keep track of my progress learning Go-lang, by starting off with a s
 - [ ] Sort an array of data
 - [ ] Write formatted data to a file
 
+## Milestones
+
+- [ ] Convert one of Diablo's dungeon generation algorithms to Go
+- [ ] Make a program to convert one image format to another
+
 ## Resources
 
 - https://gobyexample.com/ - Defining the semantics and usage of Go
