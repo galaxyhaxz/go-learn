@@ -4,6 +4,8 @@ Here I will keep track of my progress learning Go-lang, by starting off with a s
 
 - [x] Basic hello/goodbye world [[Source Code]](hello)
 - [x] Basic math, semantics, integers and arrays [[Source Code]](math)
+- [ ] Usage of multiple files
+- [ ] Usage of imported dependencies
 - [ ] Create and parse structs
 - [ ] File operations
 - [ ] Create a graphical display context
