@@ -28,6 +28,11 @@ func PrintVarType(i interface{}) {
 }
 
 func HijackDungeon(i int) {
+	if i == 0 {
+		fmt.Println("Error: 'i' cannot be zero")
+		return
+	}
+
 	var dung [40][40]int
 
 	// initialize the dungeon
