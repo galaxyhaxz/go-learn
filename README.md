@@ -22,5 +22,6 @@ Here I will keep track of my progress learning Go-lang, by starting off with a s
 ## Resources
 
 - https://gobyexample.com/ - Defining the semantics and usage of Go
+- https://golang.org/ref/spec - Go language specifications 
 - https://blog.golang.org/image - Image library
 - https://blog.golang.org/image-draw - Image drawing library
