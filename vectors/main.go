@@ -15,9 +15,24 @@ import (
 )
 
 func usage() {
-	const use = "Usage:\nmultiple [x] [y]\n"
-	fmt.Fprintln(os.Stderr, use[1:])
+	const use = "Usage:\nvectors [x] [y]\n"
+	fmt.Fprintln(os.Stderr, use)
 	flag.PrintDefaults()
+}
+
+// Get the % difference between two integers
+func GetDistError(a, b int) float64 {
+	// a will be the greater of the two
+	if a < b {
+		a ^= b
+		b ^= a
+		a ^= b
+	}
+	diff := math.Abs(float64(a - b))
+	diff /= float64(a)
+	diff *= 100
+
+	return diff
 }
 
 func main() {
@@ -30,12 +45,12 @@ func main() {
 	flag.IntVar(&y, "y", 0, "Y value")
 	flag.Usage = usage
 	flag.Parse()
-	// doesn't seem to work?
-	//paths := flag.Args()
-	// if len(paths) < 3 {
-		// flag.Usage()
-		// os.Exit(1)
-	// }
+
+	// Can't divide by zero
+	if x == 0 && y == 0 {
+		flag.Usage()
+		os.Exit(1)
+	}
 
 	veclib.TextFromAnotherLib()
 
@@ -45,13 +60,5 @@ func main() {
 	euc := veclib.Vector2D_Fast(x, y)
 	fmt.Printf("The distance for (%d,%d) is\n", x, y)
 	fmt.Printf("Squared: %d, Fast: %d\n", acc, euc)
-	if acc < euc {
-		acc ^= euc
-		euc ^= acc
-		acc ^= euc
-	}
-	diff := math.Abs(float64(acc - euc))
-	diff /= float64(acc)
-	diff *= 100
-	fmt.Printf("Total error using fast algorithm: %.2f%%", diff)
+	fmt.Printf("Total error using fast algorithm: %.2f%%", GetDistError(acc, euc))
 }

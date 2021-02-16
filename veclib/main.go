@@ -1,25 +1,25 @@
+// Package veclib implements vector calculations and math for 2D programs
 package veclib
-
-// library to implement vector and other math functions
 
 import (
 	"fmt"
 	"math"
 )
 
+// Ensure this thingy-ma-jig actually works :P
 func TextFromAnotherLib() {
-	fmt.Print("Initializing math from another dimension\n\n")
+	fmt.Printf("Calling math from another dimension\n\n")
 }
 
 // Get an accurate length for 2D vector using square root
-func Vector2D_Acc(x int, y int) int {
+func Vector2D_Acc(x, y int) int {
 	return int(math.Sqrt(float64(x * x + y * y)))
 }
 
 // Approximate length of 2D vector using Euclidean distance
 // Maximum error of 4.0%
 // C version in "Graphics Gems IV", Academic Press, 1994
-func Vector2D_Fast(x int, y int) int {
+func Vector2D_Fast(x, y int) int {
 	var t int
 	// always use positive integer
 	if x < 0 {
