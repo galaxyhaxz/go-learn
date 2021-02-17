@@ -19,11 +19,13 @@ A basic tool which calculates 2D distance between two points, using both euclide
 - [ ] Display an image
 - [ ] Sort an array of data
 - [ ] Write formatted data to a file
+- [ ] Create something that can play audio (MP3/WAV/FLAC)
 
 ## Milestones
 
 - [ ] Convert one of Diablo's dungeon generation algorithms to Go
 - [ ] Make a program to convert one image format to another
+- [ ] Make a puzzle generator and solver for sudoku and cryptograms
 
 ## Resources
 
