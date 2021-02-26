@@ -33,3 +33,7 @@ A basic tool which calculates 2D distance between two points, using both euclide
 - https://golang.org/ref/spec - Go language specifications 
 - https://blog.golang.org/image - Image library
 - https://blog.golang.org/image-draw - Image drawing library
+
+## Tools
+
+- https://github.com/tlowry/npp-golang - Syntax highlighting in Notepad++
