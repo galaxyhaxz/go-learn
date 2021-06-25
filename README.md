@@ -25,7 +25,7 @@ A basic tool which calculates 2D distance between two points, using both euclide
 
 - [ ] Convert one of Diablo's dungeon generation algorithms to Go
 - [ ] Make a program to convert one image format to another
-- [ ] Make a puzzle generator and solver for sudoku and cryptograms
+- [x] Make a puzzle generator and solver for sudoku and cryptograms [[Source Code]](https://github.com/galaxyhaxz/spana)
 
 ## Resources
 
